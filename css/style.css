@@ -1,0 +1,535 @@
+html {
+    width: 100%;
+    margin: 0 auto !important;
+    padding: 0;
+    background-color: #4DD0E1;
+    /* width: fit-content !important; */
+    /* text-align: center; */
+    font-size: 16px;
+}
+
+body {
+    text-align: center;
+    width: 100% !important;
+    margin: auto;
+}
+
+header {
+    width: 100% !important;
+    height: 150px;
+    background-color:
+        rgba(4, 245, 229, 0.155);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 1000; */
+}
+
+.header {
+    text-align: center;
+    padding-left: 10px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.ul-list {
+    padding-left: 10px;
+    width: 60% !important;
+}
+
+.header img {
+    text-align: center;
+    padding-left: 50px;
+    width: 140px;
+    height: 140px;
+}
+
+.ul-wrap {
+    /* width:500px; */
+    margin-right: 1%;
+    padding: 12px;
+    display: flex;
+    text-align: center;
+    list-style: none;
+    justify-content: space-between;
+}
+
+
+.ul-wrap li {
+    padding: 15px 15px 15px 15px;
+}
+
+.ul-wrap a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red !important;
+}
+
+.article-wrap {
+    background-image: url(../img/turtle.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: 100% !important;
+    background-size: cover;
+}
+
+
+
+
+.bg_test-text {
+    /* border: solid 1px; */
+    /* 枠線指定 */
+    /* display: inline-block; */
+    /* インラインブロックにする */
+    padding: 10px 10px;
+    /* 余白指定 */
+    /* background-color: rgba(255, 255, 255, 0.7); */
+    /* 背景色指定 */
+}
+
+.bg_test {
+    margin: auto;
+    width: 40%;
+    text-align: center;
+    /* 文字中央寄せ */
+    padding: 150px;
+    /* 余白指定 */
+
+}
+
+
+/* 旗？デザイン作りたいよねって事で、、、、 */
+
+.box1 {
+    /* text-align: center; */
+    border: 2px solid #1fdd772c;
+    background: #efefef;
+    border-radius:
+        240px 15px 100px 15px / 15px 200px 15px 185px;
+    padding: 8%;
+    width: 90%;
+    margin: 10px;
+    background-color:
+        rgba(0, 255, 251, 0.274);
+    color: #055a31;
+}
+
+
+.content {
+    /* background-image: url(../img/海洋ごみ3.jpg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: 100% !important;
+    background-size: 100% !important;
+    /* background-size: cover !important; */
+    padding: 10px !important;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto !important;
+    text-align: center;
+    align-items: center;
+
+}
+
+.policy {
+    background-image: -webkit-gradient(linear, left top, right top, from(#fa7099b4), to(#CDDC39));
+    width: 95% !important;
+    margin: auto !important;
+    text-align: center !important;
+    border-radius: 30px;
+}
+
+.policy p {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(235 243 224);
+    ;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    line-height: 190%;
+    width: 100%;
+    margin: 20px !important;
+    margin-top: 0% !important
+}
+
+
+
+
+/* .ad-block1-wrapper {
+    text-align: center;
+    width: 30%;
+    margin-top: 80px;
+  }
+  
+  .ad-block1 {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    border: solid 4px;
+    background-color: #d9d9d9;
+  } */
+
+/* .article-wrap {
+    margin: auto;
+    display: flex;
+    width: fit-content;
+  }
+  
+  article {
+    margin-top: 40px;
+  } */
+
+/* .search-box {
+    text-align: center;
+    width: 680px;
+    height: 50px;
+    margin: auto;
+  } */
+/* .search-txtbox {
+    background-color: #d9d9d9;
+    border: none;
+    box-shadow: 0 2px 7px 0 #3333339c;
+  } */
+
+/* .submit-button{
+    display: none;
+  } */
+
+/* .submit-button {
+    border: none;
+    background: none;
+    margin-left: -30px;
+  } */
+/* 
+  input {
+    width: 80%;
+    height: 60px;
+  } */
+
+/* .nukemiti {
+    width: 580px;
+    margin: 40px auto;
+    background-color: #dae7ed;
+    border: none;
+    border-radius: 39px;
+    box-shadow: 0 2px 7px 0 #1e232581;
+    padding: 8px;
+  }
+  
+  .nukemiti:hover {
+    box-shadow: none;
+    box-shadow: inset 2px 0 7px 0 #1e232581;
+    border: none;
+  }
+   */
+
+/* h1 {
+    color: #0000fe;
+    padding-left: 10%;
+  }
+  
+  .p1 {
+    color: #091350;
+    padding-left: 10%;
+  }
+  
+  .p2 {
+    color: #2c4588;
+    padding-left: 10%;
+  }
+  
+  .ad-block {
+    border: solid 3px;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+/* ↓リスポンス　の　設定↓ */
+
+@media screen and (max-width:680px) {
+
+
+    html {
+        width: 100% !important;
+        /* width: fit-content !important; */
+    }
+
+    .header {
+        padding-left: 1% !important;
+        width: 100%;
+        height: auto;
+        background-color: rgba(4, 245, 229, 0.419) !important;
+    }
+
+    .title-logo-image {
+        margin: 0 !important;
+        width: 18% !important;
+        height: 20% !important;
+        height: auto;
+        padding-left: 0px !important;
+
+    }
+
+    .ul-wrap {
+        margin: 0px !important;
+        padding: 0px !important;
+        height: 100%;
+        margin-right: 30% !important;
+    }
+
+
+    #drawer_input:checked~.nav_content {
+        left: 0%;
+    }
+
+    .nav_content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav_list {
+        padding: 0px !important;
+    }
+
+    .ul-list {
+        padding-left: 0px !important;
+        width: 60% !important;
+        font-size: 10px;
+    }
+
+    .ul-lists {
+        padding: 0px !important
+    }
+
+
+    .article-wrap {
+        background-size: 100%;
+        background-position: center;
+        background-image: 40%;
+    }
+
+    .article {
+        width: 100% !important;
+
+    }
+
+    .bg_test {
+        padding: 20px !important;
+        width: 90% !important;
+        height: 200px !important;
+        background-size: 100%;
+    }
+
+
+    .box1 {
+        font-size: 80%;
+        width: 80% !important;
+        padding: 1% !important;
+        margin: 20px !important
+    }
+
+    .content,
+    .p {
+        font-size: 10px !important;
+        align-items: center !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        height: 100%;
+        /* height: 700px !important; */
+        padding: 0 !important;
+        background-size: 100% !important;
+    }
+
+    .p {
+        width: 90%;
+        margin: auto;
+    }
+
+    .policy {
+        font-size: 75%;
+        width: 90% !important;
+    }
+
+    .policy p {
+        font-size: 10px !important;
+        justify-content: center;
+    }
+
+    /* 
+    .bg_test {padding:0 0; } */
+
+    /* -------------------------------- */
+    /* .sections-wrap2 .syouhin:hover {
+    transform: scale(10, 10);
+    transition: 2000ms;
+  } */
+
+    .content2 {
+        font-size: 12px !important;
+    }
+
+
+    .button1 {
+        font-size: 10px !important;
+    }
+
+    .total-wrap {
+        width: 100%;
+        font-size: 12px !important;
+        font-weight: bold;
+    }
+
+    .total-wrap p {
+        width: 100%;
+        ;
+    }
+
+}
+
+/* ---------------------
+  ------------
+  -------Second Page */
+
+.content1 {
+    vertical-align: middle;
+    border: 2px rgb(250, 116, 20) solid;
+    margin: 2.5%;
+    height: auto;
+}
+
+.content1 .sections {
+    border: solid 3px purple;
+    margin: 0;
+}
+
+#btn-sentaku {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 106px !important
+}
+
+
+.sections-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0.05% auto;
+    border: 0.5px solid;
+}
+
+.content2 {
+    vertical-align: middle;
+    border: 5px blue solid;
+    margin: 0.05%;
+    height: auto;
+}
+
+
+.sections {
+    /* border: 0.5px solid; */
+    width: 20%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+/* .sections img {width: 100px !important;} */
+
+/* .sections :nth-child(3){
+    width:400px
+  } */
+
+.sections-wrap2 .syouhin:hover {
+    transform: scale(3.5, 2);
+    transition: 2200ms;
+}
+
+.sections-wrap2 {
+    display: flex;
+}
+
+.sections-wrap2 :nth-child(1) {
+    border: 0.5px solid red;
+    width: 15% !important;
+    height: 100px;
+}
+
+.sections-wrap2 :nth-child(2) {
+    border: 0.5px solid blue;
+    width: 15% !important;
+}
+
+.sections-wrap2 :nth-child(3) {
+    border: 0.5px solid rgb(235, 173, 39);
+    width: 36% !important;
+}
+
+.sections-wrap2 :nth-child(4) {
+    border: 0.5px solid rgb(106, 103, 97);
+    width: 18% !important;
+}
+
+.sections-wrap2 :nth-child(5) {
+    width: 16% !important;
+}
+
+
+
+
+
+
+
+
+
+.sections-wrap2 .sections {
+    width: 25%;
+}
+
+/* .syouhin {
+    width: 190px !important;
+  } */
+
+.footer-wrap-wrap {
+    width: 100%;
+    height: 60px;
+    background-color: #D9D9D9;
+    display: flex;
+}
+
+.footer-wrap {
+    background-color: #D9D9D9;
+    color: #156897;
+    border: 2px solid;
+    width: 60%;
+    padding-left: 0.05%;
+    padding-right: 0.05%;
+    margin: auto !important;
+    border-radius: 40px;
+}
+
+.total {
+    display: flex;
+    width: 40%;
+    margin: auto;
+    justify-content: center;
+}
+
+.total-wrap {
+    width: 99%;
+    display: inline;
+    justify-content: center;
+}
