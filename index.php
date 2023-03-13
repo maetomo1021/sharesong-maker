@@ -1,20 +1,39 @@
 <?php
 
 $comment_array = array();
+$pdo = null;
+$stmt = null;
+
 //arrayは配列という意味なので、配列で保存する
 
-// echo $_POST["username"];
-// スーパーグローバル変数
 
-if (!empty($_POST["submitButton"])) {
-  echo $_POST["username"];
-  echo $_POST["submitButton"];
-}
+
 //DB接続します↓方法
 try {
   $pdo = new PDO("mysql:host=localhost;dbname=bbs-yt", "root", "root");
 } catch (PDOException $e) {
   echo $e->getMessage();
+}
+
+// echo $_POST["username"];
+// スーパーグローバル変数
+
+if (!empty($_POST["submitButton"])) {
+  // echo $_POST["username"];
+  // echo $_POST["submitButton"];
+  $postDate = date("Y-m-d H:i:s");
+
+
+  try {
+    $stmt = $pdo->prepare("INSERT INTO `bbs-table` (`username`, `comment`, `postDate`) VALUES ( :useranme, :comment, :postDate );");
+    $stmt->bindParam(':username', $_POST['username'], PDO::PARAM_STR);
+    $stmt->bindParam(':comment', $_POST['comment'], PDO::PARAM_STR);
+    $stmt->bindParam(':postDate', $postDate, PDO::PARAM_STR);
+
+    $stmt->execute();
+  } catch (PDOException $e) {
+    echo $e->getMessage();
+  }
 }
 
 //DBからコメントデータを取得する。実行するには、$pdo ->query(sql文)
@@ -49,9 +68,9 @@ $pdo = null;
             <div class="nameArea">
               <span>名前：</span>
               <p class="username"><?php echo $comment["username"] ?></p>
-              <time>2022/7/15</time>
+              <time><?php echo $comment["postDate"] ?></time>
             </div>
-            <p class="comment">手書きコメントです。</p>
+            <p class="comment">test投稿です。<?php echo $comment["username"] ?></p>
 
           </div>
         </article>
