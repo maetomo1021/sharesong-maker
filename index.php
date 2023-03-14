@@ -23,9 +23,8 @@ if (!empty($_POST["submitButton"])) {
   // echo $_POST["submitButton"];
   $postDate = date("Y-m-d H:i:s");
 
-
   try {
-    $stmt = $pdo->prepare("INSERT INTO `bbs-table` (`username`, `comment`, `postDate`) VALUES ( :useranme, :comment, :postDate );");
+    $stmt = $pdo->prepare("INSERT INTO `bbs-table` ( `username`, `comment`, `postDate`) VALUES (:useranme, :comment, :postDate);");
     $stmt->bindParam(':username', $_POST['username'], PDO::PARAM_STR);
     $stmt->bindParam(':comment', $_POST['comment'], PDO::PARAM_STR);
     $stmt->bindParam(':postDate', $postDate, PDO::PARAM_STR);
@@ -35,6 +34,7 @@ if (!empty($_POST["submitButton"])) {
     echo $e->getMessage();
   }
 }
+
 
 //DBからコメントデータを取得する。実行するには、$pdo ->query(sql文)
 $sql = "SELECT `id` , `username` , `comment`, `postDate` FROM `bbs-table`; ";
@@ -70,7 +70,7 @@ $pdo = null;
               <p class="username"><?php echo $comment["username"] ?></p>
               <time><?php echo $comment["postDate"] ?></time>
             </div>
-            <p class="comment">test投稿です。<?php echo $comment["username"] ?></p>
+            <p class="comment">test投稿です。<?php echo $comment["comment"] ?></p>
 
           </div>
         </article>
