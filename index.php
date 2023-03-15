@@ -40,12 +40,12 @@ if (!empty($_POST["submitButton"])) {
 $sql = "SELECT `id` , `username` , `comment`, `postDate` FROM `bbs-table`; ";
 $comment_array = $pdo->query($sql);
 //最終的にDB接続を閉じる必要がある為↓を実行する
-$pdo = null;
+$pdo = null; ?>
 
-?>
+
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8">
